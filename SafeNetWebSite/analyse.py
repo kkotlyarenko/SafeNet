@@ -10,7 +10,7 @@ def VT_check(url):
     dangerous = 0
     url_id = urlsafe_b64encode(url.encode('utf-8')).strip(b'=').decode('utf-8')
     api_url = "https://www.virustotal.com/api/v3/urls/" + url_id
-    headers = {"x-apikey": "bccf6a1248b2f26a7d34b19965cb47aa342ebd720d4ff77572d0f68c68bf9f23"}
+    headers = {"x-apikey": "Your_API_key"}
     response = requests.get(api_url, headers=headers)
     if response.status_code == 200:
         result = response.json()
