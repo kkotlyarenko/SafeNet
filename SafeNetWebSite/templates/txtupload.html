@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Results</title>
+    <link rel ="stylesheet" href = "{{ url_for('static', filename='button.css', v = 1) }}">
+    <link rel ="stylesheet" href = "{{ url_for('static', filename='checkbutton.css', v = 1) }}">
+    <style>
+        #output {
+            font-size: 110%;
+            font-family: 'Arial Black';
+            position: relative;
+            top: 30%;
+            left: 35%;
+        }
+    </style>
+</head>
+<body>
+<div id="background">
+    {% block content %}
+        {% for x in context %}
+        <p id="output">{{ x + "\n" }}</p>
+        {% endfor %}
+    {% endblock %}
+<h1 style = "
+    font-size: 500%;
+    font-family: 'Arial Black';
+    position: absolute;
+    top: -3%"
+    id="h1"
+    >SafeNet</h1>
+    <form action = "http://localhost:5000/">
+        <button id="back">Назад</button>
+    </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+
+input[type="file"]{
+    display: none;
+}
+label{
+    color: white;
+    height: 5%;
+    width: 14%;
+    background-color: dodgerblue;
+    position: absolute;
+    margin: auto;
+    top:0;
+    bottom: -25%;
+    left:-3.3%;
+    right:0;
+    font-size: 130%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+
+
+}
+#txt{
+    position: absolute;
+    height: 3.5%;
+    width: 25%;
+    left: 36%;
+    top: 50%
+
+}
+#background{
+    position: absolute;
+    background-image: url(backgroun.png);
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+    height:100%;
+    width: 100%;
+}
+#h1:first-letter{
+    color: white;
+}

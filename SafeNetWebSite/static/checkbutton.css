@@ -1,0 +1,84 @@
+
+#imgbut {
+    padding: 20px 40px;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 50px;
+    background-color: #111112;
+    border: 4px solid #1e88e5;
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    transition: .3s;
+    outline: none;
+    position: absolute;
+    left: 18%;
+    top: 70%
+}
+#back{
+    padding: 20px 40px;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 50px;
+    background-color: #111112;
+    border: 4px solid #1e88e5;
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    transition: .3s;
+    outline: none;
+    position: absolute;
+    left: 55%;
+    top: 80%
+}
+#txtbut{
+    padding: 20px 40px;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 50px;
+    background-color: #111112;
+    border: 4px solid #1e88e5;
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    transition: .3s;
+    outline: none;
+    position: absolute;
+    left: 55%;
+    top: 70%
+}
+button:hover {
+    background-color: #1e88e5;
+}
+
+button:before, button:after {
+    position: absolute;
+    content: '';
+    width: 20%;
+    height: 50%;
+    transition: .3s;
+    z-index: -1;
+}
+
+button:before {
+    border-bottom: 4px solid #1e88e5;
+    border-left: 4px solid #1e88e5;
+    top: 60%;
+    left: -5%;
+}
+
+button:after {
+    border-top: 4px solid #1e88e5;
+    border-right: 4px solid #1e88e5;
+    bottom: 60%;
+    right: -5%;
+}
+
+button:active:before {
+    top: 65%;
+    left: -8%;
+}
+
+button:active:after {
+    bottom: 65%;
+    right: -8%;
+}
+
+button:active:before, button:active:after {
+    width: 30%;
+    height: 60%;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <meta charset="UTF-8">
+    <title>ITLegion SafeNet</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel ='stylesheet' >
+    <link href ="https://fonts.googleapis.com/css?family=Material+Icons" rel ='stylesheet' >
+    <link rel ="stylesheet" href = "{{ url_for('static', filename='button.css', v = 1) }}">
+    <link rel ="stylesheet" href = "{{ url_for('static', filename='checkbutton.css', v = 1) }}">
+</head>
+<body>
+<div id = "background">
+    <form action = "http://localhost:5000/uploader" method = "POST" enctype = "multipart/form-data">
+        <input type = "file" name = "file" id="file"/>
+
+        <button type="submit" id="imgbut">Проверить QR-код</button>
+    </form>
+        <label for = "file">
+            <i class="material-icons">
+                add_photo
+            </i> &nbsp;
+            Choose QR
+        </label>
+    <form action = "http://localhost:5000/txtuploader" method = "POST" enctype = "multipart/form-data">
+        <input type="text" id = "txt" name="text" placeholder="Введите ссылку">
+        <button type="submit" id="txtbut">Проверить ссылку</button>
+    </form>
+    <h1 style = "
+    font-size: 500%;
+    font-family: 'Arial Black';
+    position: absolute;
+    top: -3%"
+    id="h1"
+    >SafeNet</h1>
+
+
+
+    </div>
+</body>
+</html>
